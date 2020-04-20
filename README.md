@@ -20,7 +20,7 @@ See the following GIF or watch this
 
 ## Installation
 
-``` {.vim}
+```vim
 " with vim-plug
 Plug 'https://github.com/alok/notational-fzf-vim'
 ```
@@ -89,7 +89,7 @@ work. Keep in mind that it's relative to your current working directory
     which can be done like so if you use
     [vim-plug](https://github.com/junegunn/vim-plug).
 
-    ``` {.vim}
+    ```vim
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     ```
 
@@ -107,7 +107,7 @@ strings) to search. This setting is named `g:nv_search_paths`.
 
 Remember that these can be relative links.
 
-``` {.vim}
+```vim
 " example
 let g:nv_search_paths = ['~/wiki', '~/writing', '~/code', 'docs.md' , './notes.md']
 ```
@@ -152,7 +152,7 @@ default. You should use whatever mapping(s) work best for you.
 
 For example,
 
-``` {.vim}
+```vim
 nnoremap <silent> <c-s> :NV<CR>
 ```
 
@@ -164,7 +164,7 @@ You can toggle displaying the preview window by pressing `alt-p`. This
 is handy on smaller screens. If you don't want to show the preview by
 default, set `g:nv_show_preview = 0`.
 
-``` {.vim}
+```vim
 " String. Set to '' (the empty string) if you don't want an extension appended by default.
 " Don't forget the dot, unless you don't want one.
 let g:nv_default_extension = '.md'
